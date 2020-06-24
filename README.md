@@ -1,5 +1,5 @@
-# VControl
-VControl is a package for controlling the sound volume in windows.
+# WinV
+WinV is a package for controlling the sound volume in windows.
 It takes use of the PyCaw library, which operates on a logarithmic
 scale between 0 and -28, and converts it to a more readable, 0-100
 scale using polynomial functions
@@ -9,17 +9,17 @@ scale using polynomial functions
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install vcontrol.
 
 ```bash
-pip install vcontrol
+pip install winv
 ```
 
 ## Usage
 
 ```python
-import vcontrol
+import winv
 
-vcontrol.set_volume(50) # sets the system volume to 50
-vcontrol.raise_volume(10) # increases the system volume by 10
-vcontrol.lower_volume(10) # decreases the system volume by 10
+winv.set_volume(50) # sets the system volume to 50
+winv.raise_volume(10) # increases the system volume by 10
+winv.lower_volume(10) # decreases the system volume by 10
 ```
 
 ## Contributing
