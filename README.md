@@ -20,6 +20,7 @@ import winv
 winv.set_volume(50) # sets the system volume to 50
 winv.raise_volume(10) # increases the system volume by 10
 winv.lower_volume(10) # decreases the system volume by 10
+winv.get_volume() # returns the current volume
 ```
 
 ## Contributing
