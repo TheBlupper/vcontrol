@@ -1,4 +1,4 @@
-"""VControl is a package for controlling the sound volume in windows.
+"""WinV is a package for controlling the sound volume in windows.
 It takes use of the PyCaw library, which operates on a logarithmic
 scale between 0 and -28 , and converts it to a more readable, 0-100
 scale using polynomial functions
@@ -75,7 +75,7 @@ def lower_volume(x):
     '''
 
     current = get_volume()
-    volume.SetMasterVolumeLevel(scale(current + x), None)
+    volume.SetMasterVolumeLevel(scale(max(min(current - x,100), 0)), None)
 
 
 def get_volume(*, convert=True):
