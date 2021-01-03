@@ -1,3 +1,5 @@
+# THIS PACKAGE DOES NO LONGER WORK AND IS NOT BEING UPDATED
+
 # WinV
 WinV is a package for controlling the sound volume in windows.
 It takes use of the PyCaw library, which operates on a logarithmic
